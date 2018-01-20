@@ -6,6 +6,7 @@ use std::ops::{
     DerefMut,
 };
 use imp_prelude::*;
+use std::boxed::Box;
 
 const CAP: usize = 4;
 

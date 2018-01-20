@@ -10,6 +10,7 @@
 
 use std::mem::{self, size_of};
 use std::rc::Rc;
+use std::vec::Vec;
 
 use {
     ArrayBase,

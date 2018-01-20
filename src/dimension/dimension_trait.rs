@@ -10,6 +10,7 @@
 use std::fmt::Debug;
 use std::ops::{Index, IndexMut};
 use std::ops::{Add, Sub, Mul, AddAssign, SubAssign, MulAssign};
+use std::vec::Vec;
 
 use itertools::{enumerate, zip};
 

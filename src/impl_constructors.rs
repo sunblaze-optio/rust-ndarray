@@ -20,6 +20,7 @@ use error::{self, ShapeError, ErrorKind};
 use indices;
 use indexes;
 use iterators::{to_vec, to_vec_mapped};
+use std::vec::Vec;
 
 /// # Constructor Methods for Owned Arrays
 ///

@@ -15,6 +15,7 @@ pub mod iter;
 
 use std::marker::PhantomData;
 use std::ptr;
+use std::vec::Vec;
 
 use Ix1;
 

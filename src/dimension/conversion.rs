@@ -10,6 +10,7 @@
 
 use std::ops::{Index, IndexMut};
 use libnum::Zero;
+use std::vec::Vec;
 
 use {Ix, Ix1, IxDyn, Dimension, Dim, IxDynImpl};
 

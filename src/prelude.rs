@@ -18,6 +18,8 @@
 //! # fn main() { }
 //! ```
 
+pub use std::vec::Vec;
+
 #[doc(no_inline)]
 pub use {
     ArrayBase,

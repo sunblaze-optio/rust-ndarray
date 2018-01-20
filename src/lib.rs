@@ -7,6 +7,7 @@
 // except according to those terms.
 #![crate_name="ndarray"]
 #![doc(html_root_url = "https://docs.rs/ndarray/0.11/")]
+#![no_std]
 
 //! The `ndarray` crate provides an *n*-dimensional container for general elements
 //! and for numerics.
@@ -75,6 +76,9 @@
 //!     separately.
 //!
 
+#[macro_use]
+extern crate sgx_tstd as std;
+
 #[cfg(feature = "serde-1")]
 extern crate serde;
 #[cfg(feature = "rustc-serialize")]
@@ -83,7 +87,7 @@ extern crate rustc_serialize as serialize;
 #[cfg(feature="blas")]
 extern crate cblas_sys;
 #[cfg(feature="blas")]
-extern crate blas_src;
+extern crate openblas_src;
 
 extern crate matrixmultiply;
 
@@ -93,6 +97,7 @@ extern crate num_complex;
 
 use std::marker::PhantomData;
 use std::rc::Rc;
+use std::vec::Vec;
 
 pub use dimension::{
     Dimension,
