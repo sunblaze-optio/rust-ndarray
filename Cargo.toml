@@ -24,17 +24,17 @@ bench = false
 test = true
 
 [dependencies]
-num-traits = { path = "/sgx/third_party/num/traits" }
-num-complex = { path = "../num-complex" }
+num-traits = { git = "https://github.com/ekiden/rust-sgx-sdk" }
+num-complex = { git = "https://github.com/ekiden/num-complex" }
 rustc-serialize = { version = "0.3.20", optional = true }
 itertools = { version = "0.7.0", default-features = false }
-sgx_tstd = { path = "/sgx/sgx_tstd" }
+sgx_tstd = { git = "https://github.com/ekiden/rust-sgx-sdk" }
 
 # Use via the `blas` crate feature!
-cblas-sys = { path = "../cblas-sys", optional = true }
+cblas-sys = { git = "https://github.com/ekiden/cblas-sys", optional = true }
 openblas-src = { version = "0.5", default_features = false, features = ["cblas", "static"], optional = true }
 
-matrixmultiply = { path = "/sgx/third_party/matrixmultiply" }
+matrixmultiply = { git = "https://github.com/ekiden/rust-sgx-sdk" }
 # Use via the `serde-1` crate feature!
 serde = { git = "https://github.com/ekiden/serde", optional = true }
 

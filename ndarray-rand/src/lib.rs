@@ -9,7 +9,8 @@
 //! Constructors for randomized arrays. `rand` integration for `ndarray`.
 //!
 //! See [**`RandomExt`**](trait.RandomExt.html) for usage examples.
-extern crate rand;
+#![no_std]
+extern crate sgx_rand as rand;
 extern crate ndarray;
 
 use rand::Rng;
