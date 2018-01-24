@@ -8,7 +8,7 @@ publish = false
 test = false
 
 [dev-dependencies]
-ndarray = { path = "../", features = ["blas"] }
+ndarray-sgx = { path = "../", features = ["blas"] }
 blas-src = { version = "0.1.2", default-features = false, features = ["openblas"] }
 openblas-src = { version = "0.5.6", default-features = false, features = ["cblas", "system"] }
 defmac = "0.1"
