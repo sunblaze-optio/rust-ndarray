@@ -14,7 +14,8 @@ use std::marker::PhantomData;
 
 use imp_prelude::*;
 
-use super::arraytraits::ARRAY_FORMAT_VERSION;
+//use super::arraytraits::ARRAY_FORMAT_VERSION;
+const ARRAY_FORMAT_VERSION: u8 = 1u8;
 use super::Iter;
 use IntoDimension;
 
