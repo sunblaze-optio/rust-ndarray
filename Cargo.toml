@@ -48,7 +48,7 @@ rawpointer = "0.1"
 blas = ["cblas-sys", "openblas-src"]
 
 # Serde 1.0
-serde-1 = ["serde"]
+serde-1 = ["serde-sgx"]
 
 # These features are used for testing
 test-blas-openblas-sys = ["blas"]
