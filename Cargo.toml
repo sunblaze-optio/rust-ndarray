@@ -1,6 +1,6 @@
 [package]
 
-name = "ndarray-sgx"
+name = "ndarray"
 version = "0.11.0"
 authors = ["bluss"]
 license = "MIT/Apache-2.0"
