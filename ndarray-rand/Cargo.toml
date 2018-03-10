@@ -13,7 +13,7 @@ keywords = ["multidimensional", "matrix", "rand", "ndarray"]
 
 [dependencies]
 sgx_rand = { git = "https://github.com/sunblaze-optio/rust-sgx-sdk" }
-ndarray-sgx = { version = "0.11.0", path = ".." }
+ndarray = { version = "0.11.0", path = ".." }
 
 [package.metadata.release]
 no-dev-version = true
